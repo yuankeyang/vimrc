@@ -18,6 +18,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
+Plugin 'Chiel92/vim-autoformat'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,14 +54,21 @@ let g:syntastic_check_on_wq = 0
 let g:airline#extensions#tabline#enabled = 1
 
 " vim-colors-solarized
-syntax enable
-" set background=light
+syntax on
+set background=light
 colorscheme solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_width = 30
 
 " youcompleteme
+let g:syntastic_java_checkers = []
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/youcompleteme/third_party/ycmd/examples/.ycm_extra_conf.py'
+
+" vim-autoformat
+noremap <F3> :Autoformat<CR>
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
