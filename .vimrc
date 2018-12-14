@@ -133,9 +133,9 @@ let g:airline_section_x = airline#section#create(['asyncrun_status'])
 
 " vim-colors-solarized
 syntax on
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-" let g:solarized_termcolors=256
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
