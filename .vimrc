@@ -133,6 +133,8 @@ let g:airline_section_x = airline#section#create(['asyncrun_status'])
 
 " vim-colors-solarized
 syntax on
+set term=screen-256color
+set t_ut=
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
